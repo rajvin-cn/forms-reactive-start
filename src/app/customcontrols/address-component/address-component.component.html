@@ -1,0 +1,12 @@
+<div class="form-group">
+    <label for="username">City</label>
+    <input
+      type="text"
+      id="username"
+      class="form-control"
+      [ngModel]="city"  [ngModelOptions]="{updateOn:'blur'}"
+      (ngModelChange)="onCityChange($event)"
+      >
+</div>
+
+  
