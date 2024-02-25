@@ -42,9 +42,26 @@
 
         </div>
       
+        <app-address-sub-form-component formControlName="address"></app-address-sub-form-component>
 
         <button class="btn btn-primary" type="submit" [disabled]="signupForm.invalid">Submit</button>
       </form>
+    </div>
+
+    <div>
+    <h4> SignUp Form status</h4>
+    <div class="form-val">
+
+      {{signupForm.value | json}}
+
+  </div>
+
+  <div class="form-val">
+
+      {{signupForm.valid | json}}
+
+  </div>
+
     </div>
   </div>
 </div>

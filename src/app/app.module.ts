@@ -5,10 +5,12 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
+import { AddressSubFormComponentComponent } from './Nestedcustomcontrols/address-sub-form-component/address-sub-form-component.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AddressSubFormComponentComponent
   ],
   imports: [
     BrowserModule,

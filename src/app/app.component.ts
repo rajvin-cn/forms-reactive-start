@@ -19,8 +19,8 @@ export class AppComponent implements OnInit {
      'username' : new FormControl(null, [Validators.required,CustomValidator.forbiddenNamesbyList(this.superUsers)]),
      'email' : new FormControl(null,[Validators.required,Validators.email]),
      'gender': new FormControl('male'),
-     'hobbies': new FormArray([])
-
+     'hobbies': new FormArray([]),
+      'address' : new FormControl(null)
     });
   }
  
